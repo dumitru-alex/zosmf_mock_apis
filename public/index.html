@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>z/OSMF Mock API Server</h1>
+        <br />
+        <h2>Endpoints:</h2>
+        <span>
+            <h2>Retrieve z/OSMF information</h2>
+            <p>retrieve information about z/OSMF</p>
+            <h3>HTTP method and URI path</h3>
+            <p><code>GET /zosmf/info</code></p>
+        </span>
+        <span>
+            <h2>List the spool files for a job</h2>
+            <p>list the spool files for a batch job on z/OS</p>
+            <h3>HTTP method and URI path</h3>
+            <p><code>GET /zosmf/restjobs/jobs/{jobname}/{jobid}/files</code></p>
+            <p><code>GET /zosmf/restjobs/jobs/{correlator}/files</code></p>
+        </span>
+</body>
+</html>

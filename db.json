@@ -1,0 +1,149 @@
+{
+    "info" : {
+        "zos_version": "04.26.00",
+        "zosmf_port": "443",
+        "zosmf_version": "26",
+        "zosmf_hostname": "localhost",
+        "plugins": [
+            {
+                "pluginVersion": "HSMA230;PH15438P;2019-09-16T04:53:43",
+                "pluginDefaultName": "z/OS Operator Consoles",
+                "pluginStatus": "ACTIVE"
+            },
+            {
+                "pluginVersion": "HSMA230;PI96931P;2018-05-22T06:55:26",
+                "pluginDefaultName": "Variables",
+                "pluginStatus": "ACTIVE"
+            },
+            {
+                "pluginVersion": "HSMA234;PH15051P;2019-11-14T15:51:30",
+                "pluginDefaultName": "Software Deployment",
+                "pluginStatus": "ACTIVE"
+            },
+            {
+                "pluginVersion": "HSMA235;PH16301P;2019-11-11T05:24:00",
+                "pluginDefaultName": "IncidentLog",
+                "pluginStatus": "ACTIVE"
+            },
+            {
+                "pluginVersion": "HSMA237;PH14511P;2019-12-26T05:24:54",
+                "pluginDefaultName": "Workflow",
+                "pluginStatus": "ACTIVE"
+            },
+            {
+                "pluginVersion": "HSMA23A;PH14555;2019-10-03T04:20:37",
+                "pluginDefaultName": "Network Configuration Assistant",
+                "pluginStatus": "ACTIVE"
+            },
+            {
+                "pluginVersion": "HSMA231;PH15553P;2019-09-24T07:29:37",
+                "pluginDefaultName": "ISPF",
+                "pluginStatus": "ACTIVE"
+            },
+            {
+                "pluginVersion": "HSMA230;PH16148P;2019-10-11T13:54:34",
+                "pluginDefaultName": "Import Manager",
+                "pluginStatus": "ACTIVE"
+            },
+            {
+                "pluginVersion": "HSMA232;PH16300P;2019-11-21T02:26:59",
+                "pluginDefaultName": "ResourceMonitoring",
+                "pluginStatus": "ACTIVE"
+            },
+            {
+                "pluginVersion": "HSMA233;PH18148P;2019-11-21T11:23:42",
+                "pluginDefaultName": "WorkloadManagement",
+                "pluginStatus": "ACTIVE"
+            },
+            {
+                "pluginVersion": "HSMA236;PH16150P;2019-11-21T03:21:24",
+                "pluginDefaultName": "Capacity Provisioning",
+                "pluginStatus": "ACTIVE"
+            },
+            {
+                "pluginVersion": "HSMA230;PH15850P;2019-09-25T21:25:40",
+                "pluginDefaultName": "Security Configuration Assistant",
+                "pluginStatus": "ACTIVE"
+            },
+            {
+                "pluginVersion": "HSMA230;PH15636P;2019-09-24T08:56:36",
+                "pluginDefaultName": "Cloud Provisioning",
+                "pluginStatus": "ACTIVE"
+            }
+        ],
+        "zosmf_saf_realm": "SAFRealm",
+        "zosmf_full_version": "26.0",
+        "api_version": "1"
+    },
+    "jobs" : [
+        {
+            "jobid":"JOB00023",
+            "jobname":"TESTJOB1",
+            "subsystem":null,
+            "id":1,
+            "stepname":"JESE",
+            "procstep":null,
+            "class":"H",
+            "ddname":"JESMSGLG",
+            "record-count":14,
+            "byte-count":1200,
+            "records-url":"https:\/\/host:port\/zosmf\/restjobs\/jobs\/TESTJOB1\/JOB00023\/1/records"
+        },
+        {
+            "jobid":"JOB00023",
+            "jobname":"TESTJOB1",
+            "subsystem":null,
+            "id":2,
+            "stepname":"JESE",
+            "procstep":null,
+            "class":"H",
+            "ddname":"JESJCL",
+            "record-count":10,
+            "byte-count":526,
+            "records-url":"https:\/\/host:port\/zosmf\/restjobs\/jobs\/TESTJOB1\/JOB00023\/2/records"
+        },
+        {
+            "jobid":"JOB00023",
+            "jobname":"TESTJOB1",
+            "subsystem":null,
+            "id":3,
+            "stepname":"JESE",
+            "procstep":null,
+            "class":"H",
+            "ddname":"JESYSMSG",
+            "record-count":14,
+            "byte-count":1255,
+            "records-url":"https:\/\/host:port\/zosmf\/restjobs\/jobs\/TESTJOB1\/JOB00023\/3/records"
+        },
+        {
+            "jobid":"JOB00023",
+            "jobname":"TESTJOB1",
+            "subsystem":null,
+            "id":4,
+            "stepname":"STEP57",
+            "procstep":"COMPILE",
+            "class":"H",
+            "ddname":"SYSUT1",
+            "record-count":6,
+            "byte-count":741,
+            "records-url":"https:\/\/host:port\/zosmf\/restjobs\/jobs\/TESTJOB1\/JOB00023\/4/records"
+        },
+        {
+            "jobid":"JOB00023",
+            "jobname":"TESTJOB1",
+            "subsystem":null,
+            "id":5,
+            "stepname":"STEP57",
+            "procstep":"COMPILE",
+            "class":"A",
+            "ddname":"SYSPRINT",
+            "record-count":3,
+            "byte-count":209,
+            "records-url":"https:\/\/host:port\/zosmf\/restjobs\/jobs\/TESTJOB1\/JOB00023\/5/records"
+        }
+    ],
+    "test" : [
+        {"id":1, "body" : "asd"},
+        {"id":2, "body" : "123"}
+    ]
+}

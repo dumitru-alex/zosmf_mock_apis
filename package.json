@@ -1,0 +1,24 @@
+{
+  "name": "zosmf_mock_apis",
+  "version": "0.0.1",
+  "description": "Mock APIs for z/OSMF",
+  "main": "server.js",
+  "dependencies": {
+    "json-server": "^0.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "keywords": [
+    "mock",
+    "api",
+    "zosmf"
+  ],
+  "author": "Alex Dumitru",
+  "license": "MIT"
+}

@@ -1,4 +1,5 @@
 {
-    "/getJobs" : "/jobs"
+    "/zosmf/*" : "/$1",
+    "/restjobs/jobs/:jobName/:jobId/files" : "/jobs?jobname=:jobName&jobid=:jobId"
 }
              

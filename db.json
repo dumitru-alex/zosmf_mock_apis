@@ -141,9 +141,5 @@
             "byte-count":209,
             "records-url":"https:\/\/host:port\/zosmf\/restjobs\/jobs\/TESTJOB1\/JOB00023\/5/records"
         }
-    ],
-    "test" : [
-        {"id":1, "body" : "asd"},
-        {"id":2, "body" : "123"}
     ]
 }

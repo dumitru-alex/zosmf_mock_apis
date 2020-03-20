@@ -26,7 +26,8 @@ server.use(rewriter);
 // mount the router on a different endpoint
 server.use(router);
 
-server.listen(DEFAULT_PORT, () => {
+const port = process.env.PORT || DEFAULT_PORT;
+server.listen(port, () => {
     console.log(`z/OSMF Mock Server is running on port ${DEFAULT_PORT}`);
     console.log(`http://localhost:${DEFAULT_PORT}`);
 })

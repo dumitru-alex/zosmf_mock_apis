@@ -2,7 +2,7 @@ const jsonServer = require("json-server");
 const path = require("path");
 const routes = require(path.join(__dirname, "routes.json"));
 
-const DEFAULT_PORT = 3000;
+const DEFAULT_PORT = 80;
 
 const server = jsonServer.create();
 
@@ -21,7 +21,7 @@ server.use(middlewares);
 //     '/restjobs/jobs/:jobName/:jobId/files' : '/jobs?jobname=:jobName&jobid=:jobId'
 // }));
 
-// Order matters! rewriter needs to be before router
+// Order matters! rewriter needs to be before router 
 server.use(rewriter);
 // mount the router on a different endpoint
 server.use(router);

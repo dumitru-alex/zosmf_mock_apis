@@ -1,5 +1,9 @@
 {
     "/zosmf/*" : "/$1",
-    "/restjobs/jobs/:jobName/:jobId/files" : "/jobs?jobname=:jobName&jobid=:jobId"
+    "/restjobs/jobs/:jobName/:jobId/files" : "/jobs?jobname=:jobName&jobid=:jobId",
+    "/restjobs/jobs/:jobName/:jobId" : "/jobs?jobname=:jobName&jobid=:jobId",
+    "/restjobs/jobs\\?owner=:Owner&jobid:jobId" : "/jobs?owner=:Owner&jobid=:jobId",
+    "/queryTest\\?owner=:Owner" : "/jobs?owner=:Owner"
+
 }
              

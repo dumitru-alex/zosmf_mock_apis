@@ -79,6 +79,7 @@
         {
             "jobid":"JOB00023",
             "jobname":"TESTJOB1",
+            "owner":"alex",
             "subsystem":null,
             "id":1,
             "stepname":"JESE",

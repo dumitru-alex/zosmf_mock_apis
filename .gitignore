@@ -1,1 +1,4 @@
 node_modules
+app.log
+cert.pem
+key.pem

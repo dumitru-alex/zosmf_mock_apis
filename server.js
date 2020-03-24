@@ -1,10 +1,15 @@
 const jsonServer = require("json-server");
 const path = require("path");
 const routes = require(path.join(__dirname, "routes.json"));
+const https = require("https");
+const fs = require("fs");
 
-const DEFAULT_PORT = 80;
+const DEFAULT_PORT = 3000;
 
 const server = jsonServer.create();
+
+const keyFile = path.join(__dirname, "key.pem");
+const certFile = path.join(__dirname, "cert.pem");
 
 const db = path.join(__dirname, "db.json");
 const router = jsonServer.router(db);
@@ -27,7 +32,15 @@ server.use(rewriter);
 server.use(router);
 
 const port = process.env.PORT || DEFAULT_PORT;
-server.listen(port, () => {
+
+https
+.createServer(
+    {
+    key: fs.readFileSync(keyFile),
+    cert: fs.readFileSync(certFile)
+    },
+    server
+).listen(port, () => {
     console.log(`z/OSMF Mock Server is running on port ${port}`);
 })
 
